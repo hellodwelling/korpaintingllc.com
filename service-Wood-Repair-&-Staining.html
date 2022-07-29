@@ -7,6 +7,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error('Segment snippet included twice.');else{analytics.invoked=!0;analytics.methods=['trackSubmit','trackClick','trackLink','trackForm','pageview','identify','reset','group','track','ready','alias','debug','page','once','off','on','addSourceMiddleware','addIntegrationMiddleware','setAnonymousId','addDestinationMiddleware'];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement('script');t.type='text/javascript';t.async=!0;t.src='https://cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey='Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE';;analytics.SNIPPET_VERSION='4.15.3';analytics.load('Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE');analytics.page();}}();</script>  
+
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -21,7 +23,6 @@
 
     <link rel="preload" href="https://prophone-templates.vercel.app/assets/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://prophone-templates.vercel.app/assets/output.css"></noscript>
-      <script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error('Segment snippet included twice.');else{analytics.invoked=!0;analytics.methods=['trackSubmit','trackClick','trackLink','trackForm','pageview','identify','reset','group','track','ready','alias','debug','page','once','off','on','addSourceMiddleware','addIntegrationMiddleware','setAnonymousId','addDestinationMiddleware'];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement('script');t.type='text/javascript';t.async=!0;t.src='https://cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey='Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE';;analytics.SNIPPET_VERSION='4.15.3';analytics.load('Z6dq7zq7CtZubdSRrh4EHjCsAasGDPiE');analytics.page();}}();</script>  
     <script defer src="https://unpkg.com/siema@1.5.1/dist/siema.min.js"></script>
 <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 <script defer src="https://unpkg.com/@alpinejs/trap@3.x.x/dist/cdn.min.js"></script>
@@ -317,6 +318,7 @@
     </script>
 </head>
 <body x-data="{ contactModalOpen: false, applyModalOpen: false, reviewModalOpen: false, textModalOpen: false, galleryModalOpen:false, active: 0 }" class="pt-56 md:pt-48">
+    
 
 <div
     id="launch-site-banner"
@@ -349,6 +351,7 @@
                     Norma, you’re just a few clicks from going live! Don’t worry - we can still make edits after launching.
 
                     
+                    bucks
                 </div>
             </div>
             <div class="flex flex-row items-center">
@@ -395,6 +398,8 @@
                                 class="h-[80px] xl:h-[150px] scale-100 origin-left transition w-auto"
                                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ca14d093-76e5-423a-b9d3-7076774673ba.jpeg"
                                 alt="Brand Logo"
+                                width="160" height="160"
+                                loading="lazy"
                             />
                         </a>
                     
@@ -673,7 +678,7 @@
                     </p>
                     <div class="w-full sm:w-auto">
                         
-                        <div class="w-full sm:w-auto">
+                        <div class="w-full sm:w-auto cta_text_button">
                             <button
                             :class="{'scale-100': !scrolledFromTop, 'scale-75 translate-x-8': scrolledFromTop}"
                             @click="contactModalOpen = true"
@@ -1029,7 +1034,7 @@
             <div class="flex justify-center w-full mt-8">
                      
             
-            <div class="w-full sm:w-auto">
+            <div class="w-full sm:w-auto cta_text_button">
                 <button
                     @click="contactModalOpen = true"
                     class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md  sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"
@@ -1045,7 +1050,7 @@
     </div>
 </section>
 
-<section class="bg-white">
+<section class="mt-4 bg-white">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-48">
         <div class="relative px-10">
             <div class="relative">
@@ -1563,7 +1568,7 @@ observer.observe(target)
 
 
 
-<section class="bg-white">
+<section class="bg-white" style="min-height:300px;min-width:auto">
     <div class="px-4 py-12 mx-auto text-center max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <h2 class="text-3xl font-extrabold sm:text-4xl">
             <span class="block">Ready to get started?</span>
@@ -1572,7 +1577,7 @@ observer.observe(target)
         <div class="flex justify-center mt-8">
             
             
-            <div class="w-full sm:w-auto">
+            <div class="w-full sm:w-auto cta_text_button">
                 <button
                     @click="contactModalOpen = true"
                     class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md  sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"
@@ -1595,7 +1600,7 @@ observer.observe(target)
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
           <div class="space-y-8 xl:col-span-1">
               
-              <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ca14d093-76e5-423a-b9d3-7076774673ba.jpeg" alt="" />
+              <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ca14d093-76e5-423a-b9d3-7076774673ba.jpeg" alt=""  width="80" height="80" />
               
               <p class="text-base text-gray-100">
                   Kor Painting &amp; Pressure Washing<br/>
@@ -1946,11 +1951,13 @@ observer.observe(target)
                             <div>
                                 <label for="contact-date" class="sr-only">Preferred Date of Service</label>
                                 <input
-                                        type="date"
+                                        type="text"
                                         name="date"
                                         id="contact-date"
                                         class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
                                         placeholder="Preferred Date of Service"
+                                        onfocus="(this.type='date')"
+                                        required
                                 />
                             </div>
                             
@@ -1969,8 +1976,12 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior Painting"
                                             />
+        
                                             <label for="contact-label-service-207508" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
+                                            
+                                            
                                         </div>
+                                    
                                         
                                         <div class="flex items-center">
                                             <input
@@ -1980,8 +1991,12 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Painting"
                                             />
+        
                                             <label for="contact-label-service-207509" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
+                                            
+                                            
                                         </div>
+                                    
                                         
                                         <div class="flex items-center">
                                             <input
@@ -1991,8 +2006,12 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Pressure Washing/ mold & mildew removal "
                                             />
+        
                                             <label for="contact-label-service-207510" class="ml-3 text-sm font-medium text-gray-700">Exterior Pressure Washing/ mold & mildew removal </label>
+                                            
+                                            
                                         </div>
+                                    
                                         
                                         <div class="flex items-center">
                                             <input
@@ -2002,8 +2021,12 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Kitchen & bathroom Cabinets  Refinishing"
                                             />
+        
                                             <label for="contact-label-service-207511" class="ml-3 text-sm font-medium text-gray-700">Kitchen & bathroom Cabinets  Refinishing</label>
+                                            
+                                            
                                         </div>
+                                    
                                         
                                         <div class="flex items-center">
                                             <input
@@ -2013,8 +2036,12 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Drywall and Plastering"
                                             />
+        
                                             <label for="contact-label-service-207512" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
+                                            
+                                            
                                         </div>
+                                    
                                         
                                         <div class="flex items-center">
                                             <input
@@ -2024,8 +2051,12 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Wood Repair & Staining"
                                             />
+        
                                             <label for="contact-label-service-207513" class="ml-3 text-sm font-medium text-gray-700">Wood Repair & Staining</label>
+                                            
+                                            
                                         </div>
+                                    
                                         
                                         <div class="flex items-center">
                                             <input
@@ -2035,8 +2066,12 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Gutter Cleaning"
                                             />
+        
                                             <label for="contact-label-service-207514" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning</label>
+                                            
+                                            
                                         </div>
+                                    
                                         
                                         <div class="flex items-center">
                                             <input
@@ -2046,9 +2081,23 @@ observer.observe(target)
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Painting Services"
                                             />
+        
                                             <label for="contact-label-service-207515" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
+                                            
+                                            
                                         </div>
+                                    
                                         
+                                        <div class="flex items-center">
+                                        <input
+                                                    id="contact-service-Other"
+                                                    name="Other"
+                                                    type="checkbox"
+                                                    class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                    value="Other"
+                                            />
+                                            <label for="contact-label-service-Other" class="ml-3 text-sm font-medium text-gray-700">Other</label>
+                                            </div>
                                     </div>
                                 </fieldset>
                                 
@@ -2184,7 +2233,6 @@ observer.observe(target)
                                     text-primary-foreground
                                     focus:outline-none
                                     hover:bg-primary-darker
-                                    bg-primar
                                     focus-visible:ring-2
                                     ring-primary ring-opacity-75 ring-offset-2
                                     disabled:bg-primary-darker"
